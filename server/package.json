@@ -1,0 +1,13 @@
+{
+    "name": "educonnect-hub-server",
+    "version": "1.0.0",
+    "dependencies": {
+      "express": "^4.18.2",
+      "mongoose": "^6.10.0",
+      "bcrypt": "^5.1.0",
+      "cors": "^2.8.5"
+    },
+    "scripts": {
+      "start": "node server.js"
+    }
+  }
