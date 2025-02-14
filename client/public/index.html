@@ -5,8 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EduConnect Hub</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/home/manish/Documents/xyz/educonnect-hub/client/src/styles/styles.css">
 </head>
 <body>
     <div id="root"></div>
+    <div class="card-container">
+        <div class="card">
+            <!-- Login Side -->
+            <div class="card-face login-side">
+                <div class="form-header">
+                    <div class="logo">E</div>
+                    <h2>Welcome Back</h2>
+                    <p class="subtitle">Sign in to continue learning</p>
+                </div>
+                
+                <form>
+                    <div class="form-group">
+                        <input type="email" class="input-field" placeholder=" " required>
+                        <label class="input-label">Email Address</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="password" class="input-field" placeholder=" " required>
+                        <label class="input-label">Password</label>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Sign In</button>
+                </form>
+
+                <div class="divider">
+                    <span>or continue with</span>
+                </div>
+
+                <div class="social-login">
+                    <div class="social-btn">G</div>
+                    <div class="social-btn">f</div>
+                    <div class="social-btn">in</div>
+                </div>
+
+                <div class="switch-form">
+                    <p>Don't have an account? <a href="#" onclick="document.querySelector('.card').classList.add('flipped')">Sign Up</a></p>
+                </div>
+            </div>
+
+            <!-- Signup Side -->
+            <div class="card-face signup-side">
+                <div class="form-header">
+                    <div class="logo">E</div>
+                    <h2>Create Account</h2>
+                    <p class="subtitle">Join our learning community</p>
+                </div>
+
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="input-field" placeholder=" " required>
+                        <label class="input-label">Full Name</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" class="input-field" placeholder=" " required>
+                        <label class="input-label">Email Address</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" class="input-field" placeholder=" " required>
+                        <label class="input-label">Password</label>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Create Account</button>
+                </form>
+
+                <div class="social-login">
+                    <div class="social-btn">G</div>
+                    <div class="social-btn">f</div>
+                    <div class="social-btn">in</div>
+                </div>
+
+                <div class="switch-form">
+                    <p>Already have an account? <a href="#" onclick="document.querySelector('.card').classList.remove('flipped')">Sign In</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
